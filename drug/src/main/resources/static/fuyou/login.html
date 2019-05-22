@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+			<!--     <link rel="stylesheet" href="css/bootstrap.css" /> -->
+			<link href="https://cdn.bootcss.com/jquery-confirm/3.2.3/jquery-confirm.min.css" rel="stylesheet">
+        	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css"> -->
+			<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://cdn.bootcss.com/jquery-confirm/3.2.3/jquery-confirm.min.js "></script>
+			<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+			<script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+           
+        <style>
+        	body {
+			  margin:0px;
+			  background-color:rgba(51, 153, 255, 1);
+			  background-image:none;
+			  position:relative;
+			  left:-0px;
+			  width:1660px;
+			  height: 100%;
+			  margin-left:auto;
+			  margin-right:auto;
+			  text-align:left;
+			}
+        	
+        	#u5862_div {
+			  border-width:0px;
+			  position:absolute;
+			  left:0px;
+			  top:0px;
+			  width:505px;
+			  height:58px;
+			  background:inherit;
+			  background-color:rgba(255, 255, 255, 0);
+			  border:none;
+			  border-radius:0px;
+			  -moz-box-shadow:none;
+			  -webkit-box-shadow:none;
+			  box-shadow:none;
+			  font-family:'华文琥珀';
+			  font-weight:400;
+			  font-style:normal;
+			  font-size:56px;
+			  color:#FFFFFF;
+			  text-align:center;
+			}
+        	
+        	#u5862 {
+			  border-width:0px;
+			  position:absolute;
+			  left:166px;
+			  top:122px;
+			  width:505px;
+			  height:58px;
+			  font-family:'华文琥珀';
+			  font-weight:400;
+			  font-style:normal;
+			  font-size:56px;
+			  color:#FFFFFF;
+			  text-align:center;
+			}
+			
+			#u5862_text {
+			  border-width:0px;
+			  position:absolute;
+			  left:0px;
+			  top:0px;
+			  width:505px;
+			  white-space:nowrap;
+			}
+			
+			#u5863_div {
+			  border-width:0px;
+			  position:absolute;
+			  left:0px;
+			  top:0px;
+			  width:416px;
+			  height:347px;
+			  background:inherit;
+			  background-color:rgba(255, 255, 255, 0);
+			  border:none;
+			  border-radius:0px;
+			  -moz-box-shadow:none;
+			  -webkit-box-shadow:none;
+			  box-shadow:none;
+			  font-family:'微软雅黑';
+			  font-weight:400;
+			  font-style:normal;
+			  font-size:32px;
+			  color:#FFFFFF;
+			}
+			#u5863 {
+			  border-width:0px;
+			  position:absolute;
+			  left:238px;
+			  top:317px;
+			  width:416px;
+			  height:347px;
+			  font-family:'微软雅黑';
+			  font-weight:400;
+			  font-style:normal;
+			  font-size:32px;
+			  color:#FFFFFF;
+			}
+			#u5863_text {
+			  border-width:0px;
+			  position:absolute;
+			  left:0px;
+			  top:0px;
+			  width:416px;
+			  word-wrap:break-word;
+			}
+			
+			  #login_1 {
+		    	
+		    	height: 500px;
+		    	width: 500px;
+		    	/*filter:alpha(Opacity=50);
+		    	-moz-opacity:0.3;
+		    	opacity: 0.3;*/
+		    	position: absolute;
+		    	left: 800px;
+  				top: 150px;
+		    }
+		    
+
+		    #submit{
+		    	width: 300px;
+		    	height: 40px;
+		    	font-size: 20px;
+		    	background-color: orangered;
+		    }
+        </style>
+	</head>
+	<body>
+		  <div id="u5862" class="ax_default _文本段落3">
+        <div id="u5862_div" class=""></div>
+        <div id="u5862_text" class="text ">
+          <p><span>易贷业务管理系统</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5863" class="ax_default _文本段落3">
+        <div id="u5863_div" class=""></div>
+        <div id="u5863_text" class="text ">
+          <p><span>标准的贷款业务流程</span></p><p><span><br></span></p><p><span>业务功能模块化</span></p><p><span><br></span></p><p><span>无缝对接第三方平台</span></p><p><span><br></span></p><p><span>详细全面的交互设计</span></p><p><span><br></span></p>
+        </div>
+      </div>
+		
+		
+		<div id="login_1" align="center" class="container mt-3">
+				<div class="Container">
+		<div class="row">
+		  <div class="col-md-8 col-md-offset-8">
+		      <h1 class="page-header">用户登录</h1>
+		        <!-- <form > -->
+		        <div class="form-group">
+		          <label for="userId"><h2>用户名：</h2></label>
+		          <input type="text" class="form-control" placeholder="请输入正确的账号"   id="username" name="username">
+		        </div>
+		         <div class="form-group">
+		          <label for="password"><h2>密 码：</h2></label>
+		          <input type="password" class="form-control" placeholder="请输入正确的密码" id="pwd" name="pwd">
+		        </div>
+		        <div class="checkbox">
+		        <br/>
+		        <input id="submit"  type="button" value="登录" class="btn" onclick="stafflogin()"/>
+		        </div>
+		   <!--     </form> -->
+		    </div>
+		  </div> 
+		</div>
+			</div>
+		
+	</body>
+	<script>
+		function stafflogin(){
+			var username=$('#username').val();
+			var pwd=$('#pwd').val();
+			if(username=="" || username==null){
+				$.alert({
+		    		title: '登录失败',
+		    		content: '登录失败：登录名不能为空'
+		    	});
+			}else if(pwd=="" || pwd==null){
+				$.alert({
+		    		title: '登录失败',
+		    		content: '登录失败：密码不能为空'
+		    	});
+			}else if(pwd.length<6){
+				$.alert({
+		    		title: '登录失败',
+		    		content: '登录失败：密码长度不能低于6位'
+		    	});
+			}else{
+				$.ajax({
+					url:"/web/stafflogin.do",
+					type:"post",
+					data:{
+						username:username, 
+						pwd:pwd
+					},
+					success:function(data){
+						var sID = data.sid;
+						var sName = data.sname;
+						if(data!=""){			
+							/*alert(data.sname); */
+							 location.href="../fangqi/YDmanagement/index.html?sID="+sID+"&sName="+sName;
+						}else{
+						    $.alert({
+					    		title: '登录失败',
+					    		content: '登录失败：账号或密码错误'
+					    	});
+						}
+					},error:function(data,type, err){
+						alert("ajax错误类型："+type);                                                                                 
+						alert(err);
+					}
+				});
+			}
+		}
+			
+		$(document).keyup(function(event){
+			if(event.keyCode==13){
+				$("#submit").trigger("click");
+			}
+		});	
+			
+/* 			 function keyLogin(){
+				if (event.keyCode==13)  //回车键的键值为13
+					document.getElementById("submit").click(); //调用登录按钮的登录事件
+			} */
+		
+		
+		
+/*			var aa=document.getElementById("usernmae");
+			var aaa=document.getElementById("pwd");
+				if(aa.value.length!==""&&aaa.value.length!==""){
+					alert("账号或密码不能为空")				
+			}else  if(aaa.value.length<=6||aaa.value.length>=12) {
+               alert("密码长度必须大于6小于12");
+               } */
+			
+		
+	</script>
+</html>
