@@ -10,7 +10,7 @@ public class Staff {
     private String pwd;
 
     private String ssex;
-
+    
     private String sdate;
 
     private String cellPhone;
